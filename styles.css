@@ -1,0 +1,116 @@
+*{margin: 0; padding: 0;}
+
+.header{
+    display: flex;
+}
+.header img{
+    margin-left: 60px;
+    margin-top: -20px;
+}
+* {box-sizing: border-box;}
+.header form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.header input, button {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.header input {
+  width: 800px;
+  height: 42px;
+  background: #d4d4d4;
+  padding-left: 15px;
+}
+.header button {
+    position: absolute;
+  left: 770px;; 
+  height: 26px;
+  width: 26px;
+  
+  top: 8px;
+  right: 8px;
+  background: #b1b1b1;
+  cursor: pointer;
+}
+.header button:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color:#d4d4d4;
+  font-size: 20px;
+  font-weight: bold;
+}
+.pousk{
+    
+    margin-top: 30px;
+    margin-left: 130px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #838383;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: -755px;
+    margin-top: 21px;
+    border-radius: 50%;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    margin-top: 80px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 300px;
+    height: 700px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.comp-video{
+   
+  margin-top: 15px;
+  margin-left: 350px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+  
+}
+.video{
+    width: 250px;
+    height: 180px;
+    background-color: #dbdbdb;
+    border-radius: 5%;
+}

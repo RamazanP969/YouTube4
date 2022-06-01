@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel = "stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Главная</a>
+              <a href="#">Библиотека</a>
+              <a href="#">Понравившиеся вдео</a>
+              <script>
+                  /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+              </script>
+            </div>
+          </div>
+        <img src="https://blog.pioneers.com.ua/wp-content/uploads/2017/08/3232-1024x667.png" width="200">
+        <div class="pousk">
+        <form>
+            <input type="text" placeholder="Искать здесь...">
+            <button type="submit"></button>
+          </form>
+        </div>
+    </div>
+    <div class="video-content">
+        <div class="comp-video">
+            <div class="video">
+                <h5>Video</h5>
+            </div>
+            <div class="video">
+                <h5>Video</h5>
+            </div>
+            <div class="video">
+                <h5>Video</h5>
+            </div>
+            <div class="video">
+                <h5>Video</h5>
+            </div>
+            <div class="video">
+                <h5>Video</h5>
+            </div>
+            <div class="video">
+                <h5>Video</h5>
+            </div>
+            <div class="video">
+                <h5>Video</h5>
+            </div>
+            <div class="video">
+                <h5>Video</h5>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
